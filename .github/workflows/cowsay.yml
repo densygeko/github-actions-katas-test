@@ -1,8 +1,5 @@
 name: Wise cow says wise stuff
 on: push
-defaults:
-  run:
-    shell: python
 jobs:
   Cowsay:
     runs-on: ubuntu-latest
@@ -15,7 +12,7 @@ jobs:
           cache: 'pip'
       - run: pip install python-cowsay
       - run: |
-         from cowsay import cowsay
-         print(cowsay("Hello there!"))
+         python from cowsay import cowsay
+         python print(cowsay("Hello there!"))
           
     
