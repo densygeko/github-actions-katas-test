@@ -1,3 +1,3 @@
 from cowsay import cowsay
 
-print(cowsay("Hello there")
+print(cowsay("Hello there"))
