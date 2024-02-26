@@ -4,7 +4,7 @@ jobs:
   Cowsay:
     runs-on: ubuntu-latest
     permissions:
-      packages: write
+      packages: execute
     steps:
       - uses: actions/checkout@v4
       - name: setup python
