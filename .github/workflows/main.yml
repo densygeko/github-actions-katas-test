@@ -3,7 +3,7 @@ on: push
 env:
   docker_username: ${{ github.actor}}
   docker_password: ${{ secrets.GITHUB_TOKEN }}
-  GIT_COMMIT: ${{ GITHUB_SHA }}
+  GIT_COMMIT: some name
 jobs:
   Build:
     runs-on: ubuntu-latest
