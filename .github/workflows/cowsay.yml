@@ -4,7 +4,7 @@ jobs:
   Cowsay:
     runs-on: ubuntu-latest
     permissions:
-      packages: execute
+      packages: write
     steps:
       - uses: actions/checkout@v4
       - name: setup python
@@ -13,6 +13,7 @@ jobs:
           python-version: '3.10' 
           cache: 'pip'
       - run: pip install python-cowsay
+      - run: git update-index --chmod=+x ci/cowsay.py
       - run: ci/cowsay.py
           
     
