@@ -13,7 +13,6 @@ jobs:
           python-version: '3.10' 
           cache: 'pip'
       - run: pip install python-cowsay
-      - run: git update-index --chmod=+x ci/cowsay.py
-      - run: ci/cowsay.py
+      - run: python ci/cowsay.py
           
     
