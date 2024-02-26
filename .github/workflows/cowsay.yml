@@ -1,5 +1,8 @@
 name: Wise cow says wise stuff
 on: push
+defaults:
+  run:
+    shell: python
 jobs:
   Cowsay:
     runs-on: ubuntu-latest
