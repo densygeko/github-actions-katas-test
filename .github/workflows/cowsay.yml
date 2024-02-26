@@ -10,9 +10,9 @@ jobs:
         with:
           python-version: '3.10' 
           cache: 'pip'
-      - run: pip install cowsay
+      - run: pip install python-cowsay
       - run: |
-         import cowsay
-         cowsay.say("Hello there")
+         from cowsay import cowsay
+         print(cowsay("Hello there!"))
           
     
