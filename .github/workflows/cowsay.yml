@@ -12,7 +12,7 @@ jobs:
           cache: 'pip'
       - run: pip install python-cowsay
       - run: |
-         python from cowsay import cowsay
-         python print(cowsay("Hello there!"))
+         python3 from cowsay import cowsay
+         python3 print(cowsay("Hello there!"))
           
     
